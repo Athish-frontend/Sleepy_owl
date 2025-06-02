@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  height: 100%;
+  background-color: #000000; /* Black background */
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3e2723; /* Coffee brown */
+  padding: 1rem 2rem;
+  color: white;
+}
+
+/* Logo */
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+/* Navigation */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  padding-left: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #d7ccc8;
+}
+
+/* Mid section */
+.mid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.sleepy {
+  max-width: 1000px;
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+
+/* About section */
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+#about img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+#about .about-text {
+  flex: 1;
+}
+
+#about h2 {
+  margin: 1rem 0;
+}
+
+/* Paragraph spacing */
+p {
+  margin-bottom: 1rem;
+}
+/* ... existing styles above ... */
+
+/* Bestseller image grid */
+#bestseller p{
+    text-align: center;
+}
+.bestgoing {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 1rem;
+  padding: 2rem;
+  justify-items: center;
+}
+
+.bestgoing img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.bestgoing img:hover {
+  transform: scale(1.05);
+}
+#contact p{
+    text-align: center;
+    padding: 100px;
+    size: 100px;
+}
+.social-media {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.social-media img {
+  width: 32px;
+  height: 32px;
+  filter: brightness(0) invert(1); /* makes icons white */
+  transition: transform 0.3s ease;
+}
+
+.social-media img:hover {
+  transform: scale(1.2);
+}
+
+
