@@ -1,1 +1,1 @@
-# Sleepy_owl
+This repository hosts my personal static website using GitHub Pages. The site is built with simple HTML, CSS, and JavaScript and is live at[https://<yourusername>.github.io.](https://athish-frontend.github.io/Sleepy_owl/)
