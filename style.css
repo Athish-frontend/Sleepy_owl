@@ -7,27 +7,26 @@
 body, html {
   font-family: 'Segoe UI', sans-serif;
   height: 100%;
-  background-color: #000000; /* Black background */
+  background-color: #000000;
   color: white;
+  overflow-x: hidden;
 }
 
-/* Navbar */
 .navbar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  background-color: #3e2723; /* Coffee brown */
+  background-color: #3e2723;
   padding: 1rem 2rem;
   color: white;
 }
 
-/* Logo */
 .logo img {
   height: 50px;
   width: auto;
 }
 
-/* Navigation */
 .nav-links {
   list-style: none;
   display: flex;
@@ -47,7 +46,6 @@ body, html {
   color: #d7ccc8;
 }
 
-/* Mid section */
 .mid {
   display: flex;
   flex-direction: column;
@@ -65,7 +63,6 @@ body, html {
   border-radius: 10px;
 }
 
-/* About section */
 #about {
   display: flex;
   align-items: center;
@@ -90,19 +87,17 @@ body, html {
   margin: 1rem 0;
 }
 
-/* Paragraph spacing */
 p {
   margin-bottom: 1rem;
 }
-/* ... existing styles above ... */
 
-/* Bestseller image grid */
-#bestseller p{
-    text-align: center;
+#bestseller p {
+  text-align: center;
 }
+
 .bestgoing {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   padding: 2rem;
   justify-items: center;
@@ -118,11 +113,12 @@ p {
 .bestgoing img:hover {
   transform: scale(1.05);
 }
-#contact p{
-    text-align: center;
-    padding: 100px;
-    size: 100px;
+
+#contact p {
+  text-align: center;
+  padding: 100px 20px;
 }
+
 .social-media {
   margin-top: 2rem;
   display: flex;
@@ -133,7 +129,7 @@ p {
 .social-media img {
   width: 32px;
   height: 32px;
-  filter: brightness(0) invert(1); /* makes icons white */
+  filter: brightness(0) invert(1);
   transition: transform 0.3s ease;
 }
 
@@ -141,4 +137,48 @@ p {
   transform: scale(1.2);
 }
 
+@media (max-width: 768px) {
+  /* Reduce font sizes */
+  body {
+    font-size: 14px;
+  }
 
+  h1, h2, h3 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0;
+  }
+
+  .nav-links li {
+    padding: 0.5rem 0;
+  }
+
+  #about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #about .about-text {
+    text-align: center;
+  }
+
+  .bestgoing {
+    grid-template-columns: 1fr; 
+  }
+
+  #contact p {
+    padding: 2rem 1rem;
+  }
+}
